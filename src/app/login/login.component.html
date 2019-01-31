@@ -1,0 +1,39 @@
+<div class="container-fluid h-100">
+  <div class=" h-100 row justify-content-center align-items-center">
+    <div class=" col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
+      <div class="card p-1 mb-2 border-light">
+        <img src="../../assets/images/smile.png" class="mt-4 card-img-top mx-auto" alt="Smile">
+        <div class="card-body">
+          <h5 class="card-title text-center mt-2">Sign in to start a new session</h5>
+          <hr>
+          <form [formGroup]="login" (ngSubmit)="onSubmit()" no validate>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input class="form-control" placeholder="Username" type="text" formControlName="user">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder="**********" type="password" formControlName="pwd">
+              </div> <!-- input-group.// -->
+            </div> <!-- form-group// -->
+            <div class="form-group row mx-0">    
+              <div class="col-8">
+                <img src="../../assets/images/altran-logo.png" class="card-img-bottom mx-auto" alt="Altran logo">
+              </div>                       
+              <button class="col-4 btn btn-primary" type="submit" [disabled] ="!login.valid">
+                Sign In 
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

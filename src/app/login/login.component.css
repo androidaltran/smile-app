@@ -1,0 +1,13 @@
+.card {
+    height: 500px;
+    opacity: 0.9;
+    box-shadow: 0 0 30px black;
+}
+
+.card-img-top {
+    width: 200px;
+}
+
+.card-img-bottom {
+    width: 150px;
+}
